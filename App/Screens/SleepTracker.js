@@ -55,7 +55,7 @@ const SleepTracker = () => {
       if (startTime) {
         handleToggleSleep();
       }
-    }, 60000); // Check for inactivity every 1 minute (adjust as needed)
+    }, 60000); // Check for inactivity every 1 minute
 
     return () => clearTimeout(inactivityTimeout);
   }, [startTime]);
